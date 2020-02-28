@@ -8,6 +8,7 @@ namespace SimpleStream
     {
         int Read( Span<byte> buffer );
     }
+
     public interface IReadStreamKnownLength : IReadStream, IHaveLength
     {
     }

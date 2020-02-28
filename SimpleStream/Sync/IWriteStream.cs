@@ -4,7 +4,7 @@ namespace SimpleStream
 {
     public interface IWriteStream
     {
-        void Write( Span<byte> buffer );
+        void Write( ReadOnlySpan<byte> buffer );
     }
 
     public interface IWriteStreamKnownLength : IHaveLength

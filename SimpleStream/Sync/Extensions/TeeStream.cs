@@ -18,7 +18,7 @@ namespace SimpleStream.Sync.Extensions
                 _streams = streams;
             }
 
-            public void Write( Span<byte> buffer )
+            public void Write( ReadOnlySpan<byte> buffer )
             {
                 foreach( var stream in _streams )
                 {
